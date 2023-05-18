@@ -1,1 +1,73 @@
 /*Schrijf hier jouw CSS*/
+body {
+    /*border: 2px solid greenyellow;*/
+    min-height: 100vh;
+    display: flex;
+    flex-direction: row;
+    flex-basis: 100%;
+}
+
+/* dit is het nav element*/
+.outer-col-1 {
+    flex-basis: 20%;
+    flex-grow: 0;
+    flex-shrink: 0;
+}
+
+/* dit is het buitenste div element*/
+.outer-col-2 {
+    /*border: 2px dotted deeppink;*/
+    display: flex;
+    flex-direction: column;
+    flex-basis: 80%;
+    flex-grow: 1;
+    flex-shrink: 1;
+}
+
+header {
+    /*border: 2px dotted blue;*/
+    flex-basis: 100px;
+    flex-grow: 0;
+    flex-shrink: 0;
+}
+
+/* dit is het middelste div element*/
+.inner-row {
+    /*border: 2px dotted blue;*/
+    display: flex;
+    flex-direction: row;
+    flex-basis: auto;
+    flex-grow: 1;
+    flex-shrink: 1;
+}
+
+aside {
+    /*border: 2px dashed dimgrey;*/
+    flex-basis: 20%;
+    flex-grow: 0;
+    flex-shrink: 0;
+}
+
+/* dit is het binnenste div element*/
+.inner-col {
+    /*border: 2px dashed dimgrey;*/
+    flex-basis: 80%;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    flex-shrink: 1;
+}
+
+article {
+    /*border: 2px dotted purple;*/
+    flex-basis: auto;
+    flex-grow: 1;
+    flex-shrink: 1;
+}
+
+footer {
+    /*border: 2px dotted purple;*/
+    flex-basis: 100px;
+    flex-grow: 0;
+    flex-shrink: 0;
+}

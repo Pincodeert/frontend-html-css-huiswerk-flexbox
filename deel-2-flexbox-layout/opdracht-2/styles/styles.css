@@ -1,1 +1,51 @@
 /*Schrijf hier jouw CSS*/
+body {
+    /*border: 2px solid greenyellow;*/
+    display: flex;
+    flex-direction: row;
+    /*justify-content: stretch;*/
+    align-items: stretch;
+    height: 100vh;
+}
+
+/* dit is de div*/
+.col-2 {
+    /*border: 2px dotted deeppink;*/
+    display: flex;
+    flex-direction: column;
+    flex-basis: 80%;
+    flex-grow: 1;
+    flex-shrink: 1;
+
+}
+
+main {
+    /*border: 2px dotted blue;*/
+    display: flex;
+    flex-direction: row;
+    flex-basis: auto;
+    flex-grow: 1;
+    flex-shrink: 1;
+}
+
+header {
+    flex-basis: 100px;
+}
+
+footer {
+    flex-basis: 100px;
+}
+
+/* dit is het nav element */
+.col-1 {
+    flex-basis: 20%;
+}
+
+.col-1, header, footer {
+    flex-grow: 0;
+    flex-shrink: 0;
+}
+
+article {
+    flex-basis: 100%;
+}
