@@ -36,9 +36,12 @@
 <h3>Opdracht 3</h3>
 <img src="assets/images/opdracht-3-eindresultaat.jpg" alt="opdracht-3 voorbeeld">
 <section class="opdracht-3">
-    <ul>
+    <!-- Hier de class flex-container toegevoegd, omdat anders niet de afwijkende instelling van de min-heigth in de
+    do-not-edit.css wordt toegepast en dit in de styles.css moet worden opgelost zodat de flexbox heigth groot genoeg
+    is om verticaal uit te kunnen lijnen -->
+    <ul class="flex-container">
         <li class="item-top-left">Top left</li>
-        <li>Centered</li>
+        <li class="item-center">Centered</li>
         <li class="item-bottom-right">Bottom right</li>
     </ul>
 </section>
@@ -76,16 +79,19 @@
 <h3>Opdracht 5</h3>
 <img src="assets/images/opdracht-5-eindresultaat.jpg" alt="opdracht-5 voorbeeld">
 <section class="opdracht-5">
-    <div>
-        <ul class="list-left">
+    <!-- Hier de class flex-container toegevoegd, omdat anders niet de afwijkende instelling van de min-height in de
+    do-not-edit.css wordt toegepast en dit in de styles.css moet worden opgelost zodat de flexbox heigth groot genoeg
+    is om verticaal uit te kunnen lijnen -->
+    <div class="flex-container">
+        <ul class="list-left flex-column">
             <li>Column 1 top</li>
             <li>Column 1 bottom</li>
         </ul>
-        <ul class="list-middle">
+        <ul class="list-middle flex-column">
             <li>Column 2 top</li>
             <li>Column 2 bottom</li>
         </ul>
-        <ul class="list-right">
+        <ul class="list-right flex-column">
             <li>Column 3 top</li>
             <li>Column 3 bottom</li>
         </ul>
