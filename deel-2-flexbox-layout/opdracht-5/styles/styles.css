@@ -1,1 +1,52 @@
 /*Schrijf hier jouw CSS*/
+body {
+    /*border: 2px solid greenyellow;*/
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+header,
+footer {
+    flex-basis: 200px;
+    flex-grow: 0;
+    flex-shrink: 0;
+}
+
+main {
+    /*border: 2px dotted deeppink;*/
+    flex-basis: auto;
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+    flex-shrink: 1;
+}
+
+article {
+    flex-basis: auto;
+    /* Omdat article en aside al op goede plek in de row komen te staan, wanneer het nav-item naar voren wordt gehaald,
+     kan je er ook voor kiezen om alleen aan het nav-item de order-property -1 mee te geven
+     (en article en nav geen order-property) */
+    order: 2;
+    flex-grow: 1;
+    flex-shrink: 1;
+}
+
+nav {
+    flex-basis: 20vw;
+    order: 1;
+    /* Omdat article en aside al op goede plek in de row komen te staan, wanneer het nav-item naar voren wordt gehaald,
+     kan je er ook voor kiezen om alleen aan het nav-item de order-property -1 mee te geven
+     (en article en nav geen order-property) */
+    /*order: -1;*/
+    flex-grow: 0;
+    flex-shrink: 0;
+}
+
+aside {
+    flex-basis: 20vw;
+    order: 3;
+    flex-grow: 0;
+    flex-shrink: 0;
+}
+

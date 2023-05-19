@@ -1,1 +1,113 @@
 /*Schrijf hier jouw CSS*/
+
+/*//////////////  OPDRACHT 1///////////////////*/
+.opdracht-1 ul {
+    /*border: 2px dotted pink;*/
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+/*//////////////// OPDRACHT 2  ///////////////////*/
+.opdracht-2 ul {
+    /*border: 2px dotted deeppink;*/
+    display: flex;
+    flex-direction: row;
+    /*justify-content: center;*/
+
+}
+.opdracht-2 li {
+    /* de totale breedte van de parent (880px) opgedeeld in 3 gelijke stukken*/
+    flex-basis: 267px;
+}
+
+/*///////////////// OPDRACHT 3 //////////////////*/
+.opdracht-3 ul {
+    /*border: 2px dotted deeppink;*/
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    /*height: 100%;*/
+}
+
+.opdracht-3 .item-top-left {
+    align-self: flex-start;
+}
+
+.opdracht-3 .item-center {
+    align-self: center;
+}
+
+.opdracht-3 .item-bottom-right {
+    align-self: flex-end;
+}
+
+/*////////// OPDRACHT 4 /////////*/
+.opdracht-4 ul {
+    /*border: 2px dotted deeppink;*/
+    display: flex;
+    flex-direction: row;
+    /* dit is de default van de justify-content-property. kan ook weggelaten worden: */
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+/*///////////// OPDRACHT 5 ///////////*/
+.opdracht-5 div{
+    /*border: 2px solid greenyellow;*/
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    /*height: 100%;*/
+}
+
+.list-left,
+.list-middle,
+.list-right {
+    /*border: 2px dotted deeppink;*/
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* hier is uitgegaan van de default instelling van align-items namelijk flex-start*/
+    /* align-items: flex-start*/
+    /* alternatief zou zijn om hier align-items: center te gebruiken en dan het list-item .list-left toevoegen en met
+    property align-items: flex-start: */
+    /*align-items: center;*/
+}
+
+.list-middle {
+    align-items: center;
+}
+
+.list-right {
+    align-items: flex-end;
+}
+
+/* alternatief vermeld in uitwerkingen novi waarbij de ul-items eerst worden gecentreerd middels align-items: center
+en vervolgens individueel worden uitgelijnd, niet door aparte classes toe tekennen en aan te roepem, maar door gebruik
+te maken van de nth-of-type() pseudo-class (matches elements based on their position among siblings of the same
+type(tag name)*/
+
+/*.list-left,*/
+/*.list-middle,*/
+/*.list-right {*/
+/*    border: 2px dotted deeppink;*/
+/*    display: flex;*/
+/*    flex-direction: column;*/
+/*    justify-content: space-between;*/
+/*    align-items: center;*/
+/*}*/
+
+/*!* ipv specifieke class flex-column had hie ook het element zelf (ul) gebruikt kunnen worden*!*/
+/*.opdracht-5 .flex-column:nth-of-type(1) {*/
+/*    align-items: flex-start;*/
+/*}*/
+
+/*.opdracht-5 .flex-column:nth-of-type(2) {*/
+/*    align-items: center;*/
+/*}*/
+
+/*.opdracht-5 .flex-column:nth-of-type(3) {*/
+/*    align-items: flex-end;*/
+/*}*/

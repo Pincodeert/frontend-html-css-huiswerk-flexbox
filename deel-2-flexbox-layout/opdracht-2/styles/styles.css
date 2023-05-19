@@ -1,1 +1,54 @@
 /*Schrijf hier jouw CSS*/
+body {
+    /*border: 2px solid greenyellow;*/
+    display: flex;
+    flex-direction: row;
+    min-height: 100vh;
+}
+
+/* dit is de div*/
+.col-2 {
+    /*border: 2px dotted deeppink;*/
+    display: flex;
+    flex-direction: column;
+    /*Omdat deze div in een row-container staat, gaat flex-basis hier over de BREEDTE. We willen dat dit item alle
+    overgebleven ruimte inneemt, dus zetten we de BREEDTE op auto en regelen we de rest met de grow-property*/
+    flex-basis: auto;
+    flex-grow: 1;
+    flex-shrink: 1;
+
+}
+
+main {
+    /*border: 2px dotted blue;*/
+    display: flex;
+    flex-direction: row;
+    flex-basis: auto;
+    flex-grow: 1;
+    flex-shrink: 1;
+}
+
+header {
+    flex-basis: 200px;
+}
+
+footer {
+    flex-basis: 200px;
+}
+
+/* dit is het nav element */
+.col-1 {
+    /*Omdat deze div in een row-container staat, gaat flex-basis hier over de BREEDTE */
+    flex-basis: 20vw;
+}
+
+.col-1, header, footer {
+    flex-grow: 0;
+    flex-shrink: 0;
+}
+
+article {
+    flex-basis: auto;
+    flex-grow: 1;
+    flex-shrink: 1;
+}

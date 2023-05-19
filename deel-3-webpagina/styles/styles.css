@@ -1,1 +1,83 @@
 /*Schrijf hier jouw css*/
+
+/* CSS reset */
+* {
+    box-sizing: border-box;
+    margin:0;
+    padding: 0;
+}
+
+body {
+    background-color: #F2F3D9;
+    /*min-height: 100vh;*/
+    font-family: 'Poppins', sans-serif;
+    color: #030027;
+    /* hier al de text-align gebruiken zodat van toepassing is op de hele body*/
+    text-align: center;
+}
+
+.about-us-section {
+    /*border: 2px solid greenyellow;*/
+    padding: 40px;
+}
+
+.article-section {
+    /*border: 2px solid greenyellow;*/
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 30px 0;
+}
+
+article {
+    background-color: #c16e70;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 20px;
+    /* als je hier min-height zou gebruiken ipv height zoud de tekst niet buiten de het gekleurde vlak vallen;
+    maar dat was niet de opdracht */
+    height: 350px;
+    /* in plaats van max-width, hier flex-basis gebruiken*/
+    /*max-width: 280px;*/
+    flex-basis: 280px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    /* dit had ook gekund: */
+    /*flex-direction: column;*/
+    /*justify-content: flex-end;*/
+    flex-shrink: 1;
+    flex-grow: 0;
+ }
+
+
+.company-brand-name {
+    /*border: 2px dashed pink;*/
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+nav {
+    /*border: 2px dotted navajowhite;*/
+    background-color: #030027;
+    /*color: #F2F3D9;*/
+    color: #FFFFFF;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 30px 40px;
+}
+
+ul {
+    /*border: 2px dashed pink;*/
+    list-style: none;
+    /*Wanneer we geen basis-breedte meegeven, hebben de items ook geen ruimte om zich evenredig te verdelen!*/
+    flex-basis: 400px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    /* alle items groeien NIET mee in verhouding tot de overgebleven ruimte */
+    flex-grow: 0;
+    /* alle items worden evenredig kleiner dan de basis wanneer er geen ruimte is */
+    flex-shrink: 1;
+}
