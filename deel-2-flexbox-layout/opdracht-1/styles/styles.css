@@ -1,23 +1,27 @@
 /*Schrijf hier jouw CSS*/
 body {
-    border: 2px solid deeppink;
+    /*border: 2px solid deeppink;*/
     display: flex;
     flex-direction: column;
-    height: 100vh;
+    min-height: 100vh;
 }
 
-header, footer {
-    flex-basis: 100px;
+header,
+footer {
+    /* Omdat de header en de footer in een column-container staan, gaat de flex-basis hier over de hoogte, en in dat
+    geval werken we liever met px of auto ipv met %*/
+    flex-basis: 150px;
     flex-grow: 0;
     flex-shrink: 0;
 }
 
 main {
-    border: 2px dotted greenyellow;
+    /*border: 2px dotted greenyellow;*/
     display: flex;
     flex-direction: row;
-    justify-content: stretch;
-    align-items: stretch;
+    /* Omdat main in een column-container staat, heeft de flex-basis betrekking op de hoogte en werken we liever met
+    px of auto ipv met %. Omdat we willen dat dit item alle overgebleven ruimte inneemt, zetten we de hoogte op auto
+    en regelen we de rest met de grow-property **/
     flex-basis: auto;
     flex-grow: 1;
     flex-shrink: 0;
@@ -26,14 +30,17 @@ main {
 nav {
     flex-grow: 1;
     flex-shrink: 0;
-    flex-basis: 20%;
+    /* Omdat het nav item in een row-container staat, heeft de flex-basis hier betrekking op de breedte en gebruiken we
+    viewport width om de breedte aan te passen */
+    flex-basis: 20vw;
+    /* Hiermee veranderen we de hardcoded volgorde */
     order: 3;
 }
 
 aside {
     flex-grow: 1;
     flex-shrink: 0;
-    flex-basis: 20%;
+    flex-basis: 20vw;
     /* volgorde van item in de row veranderen */
     order: 2;
 }
@@ -41,6 +48,7 @@ aside {
 article {
     flex-grow: 1;
     flex-shrink: 1;
-    flex-basis: 60%;
+    flex-basis: 60vw;
+    /* Hiermee veranderen we de hardcoded volgorde */
     order: 1;
 }

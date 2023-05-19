@@ -4,12 +4,11 @@ body {
     min-height: 100vh;
     display: flex;
     flex-direction: row;
-    flex-basis: 100%;
 }
 
 /* dit is het nav element*/
 .outer-col-1 {
-    flex-basis: 20%;
+    flex-basis: 20vw;
     flex-grow: 0;
     flex-shrink: 0;
 }
@@ -19,14 +18,14 @@ body {
     /*border: 2px dotted deeppink;*/
     display: flex;
     flex-direction: column;
-    flex-basis: 80%;
+    flex-basis: auto;
     flex-grow: 1;
     flex-shrink: 1;
 }
 
 header {
     /*border: 2px dotted blue;*/
-    flex-basis: 100px;
+    flex-basis: 200px;
     flex-grow: 0;
     flex-shrink: 0;
 }
@@ -43,7 +42,7 @@ header {
 
 aside {
     /*border: 2px dashed dimgrey;*/
-    flex-basis: 20%;
+    flex-basis: 20vw;
     flex-grow: 0;
     flex-shrink: 0;
 }
@@ -51,7 +50,7 @@ aside {
 /* dit is het binnenste div element*/
 .inner-col {
     /*border: 2px dashed dimgrey;*/
-    flex-basis: 80%;
+    flex-basis: auto;
     display: flex;
     flex-direction: column;
     flex-grow: 1;
@@ -67,7 +66,7 @@ article {
 
 footer {
     /*border: 2px dotted purple;*/
-    flex-basis: 100px;
+    flex-basis: 200px;
     flex-grow: 0;
     flex-shrink: 0;
 }
